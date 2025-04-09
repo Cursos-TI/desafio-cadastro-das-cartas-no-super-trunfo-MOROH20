@@ -7,7 +7,6 @@
 //Teste larissa
 
 int main() {
-   
     
   // Sugestão: Defina variáveis separadas para cada atributo da cidade.
   // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -105,7 +104,11 @@ int main() {
     printf("Área: %.2f km2\n",carta_02_Area);
     printf("PIB: %.2f bilhões de reais\n",carta_02_PIB);
     printf("Número de Pontos Turísticos: %i\n",carta_02_Numero_de_Pontos_Turisticos);
-  
+
+    //aplicacao de calculos para obter densidade populacional e pibpercapita
+    printf("Densidade Populacional: %.2f hab/km²\n",(float)carta_02_Populacao/carta_02_Area);
+    printf("PIB per Capita: %.2f reais\n",(carta_02_PIB*1000000000)/carta_02_Populacao);
+
   return 0;
 
 }
